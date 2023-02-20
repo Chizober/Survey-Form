@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Female Web Developers' Survey Form</h1>
+  <p id="description">This is a survey form on the web package female developers learn more.</p>
+  <form id="survey-form">
+    <div id="form-input">
+      <label id="name-label">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+    </div>
+
+    <div id="form-input">
+      <label id="email-label">Email</label>
+      <input type="email" name="email" placeholder="Enter Your Email" id="email" required>
+    </div>
+
+    <div id="form-input">
+      <label id="number-label">Age</label>
+      <input type="number" name="number" placeholder="Enter Your Age" id="number" min=1 max=60>
+    </div>
+
+    <div id="form-input">
+      <label for="dropdown">What is your level of expertise?</label>
+      <select id="dropdown" name="packages">
+        <option value="">--Please choose one option--</option>
+        <option value="trainee developer" id="dropdown">Trainee developer</option>
+        <option value="junior developer" id="dropdown">Junior developer</option>
+        <option value="Mid-level developer" id="dropdown">Mid-level developer</option>
+        <option value="Senior developer" id="dropdown">Senior developer</option>
+        <option value="leader" id="dropdown">Leader</option>
+      </select>
+    </div>
+
+    <fieldset id="form-input">
+      <legend id="legend">Web Developer</legend>
+      <label for="front-end" id="radio">Front-End Developer
+        <input type="radio" id="front-end" value="Front-End Developer" name="programme"><span></span></label>
+      <label for="back-end" id="radio">Back-End Developer
+        <input type="radio" id="back-end" value="Back-End Developer" name="programme"><span></span>
+      </label>
+      <label for="fullstack" id="radio">FullStack Developer
+        <input type="radio" value="Full Stack Developer" name="programme" id="fullstack"><span></span></label>
+    </fieldset>
+
+    <fieldset id="form-input">
+      <legend id="legend">Why?</legend>
+      <label id="checkbox">Easier to learn
+        <input type="checkbox" value="Easier to learn" name="reason"><span></span></label>
+      <label id="checkbox">Pays more
+        <input type="checkbox" value="Pays more" name="reason"><span></span></label>
+      <label id="checkbox">Most Popular
+        <input type="checkbox" value="Most Popular" name="reason"><span></span></label>
+      <label id="checkbox">All of the above
+        <input type="checkbox" value="All of the above" name="reason"><span></span></label>
+      <label id="checkbox">None of the above
+        <input type="checkbox" value="None of the above" name="reason"><span></span></label>
+    </fieldset>
+
+    <div id="form-input">
+      <label>Your journey so far:</label>
+      <textarea name="description">
+            Drop Your answers here
+    </textarea>
+    </div>
+
+    <div id=form-input>
+      <button id="submit">Submit</button>
+    </div>
+  </form>
+</body>
+
+</html>
